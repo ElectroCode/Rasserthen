@@ -1,0 +1,216 @@
+# Karma plugin in Limnoria.
+# Copyright (C) 2011-2014 Limnoria
+# Mikaela Suomalainen <mikaela.suomalainen@outlook.com>, 2011-2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Karma plugin for Limnoria\n"
+"POT-Creation-Date: 2014-12-20 13:30+EET\n"
+"PO-Revision-Date: 2014-12-20 13:50+0200\n"
+"Last-Translator: Mikaela Suomalainen <mikaela.suomalainen@outlook.com>\n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config.py:46
+msgid ""
+"Determines whether the bot will output shorter\n"
+"    versions of the karma output when requesting a single thing's karma."
+msgstr ""
+"Määrittää tulostaako botti lyhyemmän version\n"
+"    karma ulostulosta, kun pyydetään yhden asian karmaa."
+
+#: config.py:49
+msgid ""
+"A space separated list of\n"
+"    characters to increase karma."
+msgstr "Välilyönneillä eroitettu lista merkeistä, jotka nostavat karmaa."
+
+#: config.py:52
+msgid ""
+"A space separated list of\n"
+"    characters to decrease karma."
+msgstr "Välilyöneillä eroitettu lista merkeistä, jotka laskevat karmaa."
+
+#: config.py:55
+msgid ""
+"Determines whether the bot will reply with a\n"
+"    success message when something's karma is increased or decreased."
+msgstr ""
+"Määrittää vastaako botti onnistumisviestillä, kun\n"
+"    jonkin karmaa on nostettu tai laskettu."
+
+#: config.py:58
+msgid ""
+"Determines how many highest/lowest karma things\n"
+"    are shown when karma is called with no arguments."
+msgstr ""
+"Määrittää kuinka monta korkeinta/matalinta karma asiaa\n"
+"    näytetään, kun karma pyydetään ilman parametriä."
+
+#: config.py:61
+msgid ""
+"Determines how many karma things are shown when\n"
+"    the most command is called."
+msgstr ""
+"Määrittää kuinka monta karma asiaa näytetään, kun\n"
+"    kun \"most\" komento on pyydetty.'"
+
+#: config.py:64
+msgid ""
+"Determines whether users can adjust the karma\n"
+"    of their nick."
+msgstr ""
+"Määrittää pystyvätkö käyttäjän määrittämään\n"
+"    nimimerkkinsä karman."
+
+#: config.py:67
+msgid ""
+"Determines whether the bot will\n"
+"    increase/decrease karma without being addressed."
+msgstr ""
+"Määrittää nostaako/vähentääkö botti karmaa\n"
+"    ilman, että sille tarkoitetaan viestejä."
+
+#: plugin.py:222
+msgid "Provides a simple tracker for setting Karma (thing++, thing--)."
+msgstr "Tarjoaa yksinkertaisen Karman seuraajan (jokin++, jokin--)."
+
+#: plugin.py:241
+msgid "%(thing)s's karma is now %(karma)i"
+msgstr "%(thing)in karma on nyt %(karma)i"
+
+#: plugin.py:255 plugin.py:264
+msgid "You're not allowed to adjust your own karma."
+msgstr "Sinä et saa määrittää omaa karmaasi."
+
+#: plugin.py:291
+msgid ""
+"[<channel>] [<thing> ...]\n"
+"\n"
+"        Returns the karma of <thing>.  If <thing> is not given, returns the "
+"top\n"
+"        N karmas, where N is determined by the config variable\n"
+"        supybot.plugins.Karma.rankingDisplay.  If one <thing> is given, "
+"returns\n"
+"        the details of its karma; if more than one <thing> is given, "
+"returns\n"
+"        the total karma of each of the things. <channel> is only necessary\n"
+"        if the message isn't sent on the channel itself.\n"
+"        "
+msgstr ""
+"[<Kanava>] [<asia> ...]\n"
+"\n"
+"        Palauttaa <asian> karman.  Jos <asiaa> ei ole annettu, palauttaa "
+"TOP\n"
+"        N karmat, missä N on asetusarvon\n"
+"        supybot.plugins.Karma.rankingDisplay määrittämä. Jos yksi <asia> on "
+"annettu, palauttaa\n"
+"        tiedot sen karmasta; jos useampi kuin yksi <asia> on annettu, "
+"tarkistaa jokaisen asian\n"
+"        yhteiskarman. <Kanava> on vaadittu vain, jos\n"
+"        viestiä ei lähetetä kanavalla itsellään.\n"
+"        "
+
+#: plugin.py:304
+msgid "%s has neutral karma."
+msgstr "%s:llä on neutraali karma."
+
+#: plugin.py:311
+msgid ""
+"Karma for %q has been increased %n and decreased %n for a total karma of %s."
+msgstr "Karma %q:lle on noussut %n ja laskenut %n yhteiskarmalle %s."
+
+#: plugin.py:313 plugin.py:314
+msgid "time"
+msgstr "aika"
+
+#: plugin.py:327
+msgid "I didn't know the karma for any of those things."
+msgstr "Minä en tiennyt yhtäkään noiden asioiden karmoista."
+
+#: plugin.py:337 plugin.py:366
+msgid "I have no karma for this channel."
+msgstr "Minulla ei ole karmaa tälle kanavalle."
+
+#: plugin.py:342
+msgid "  You (%s) are ranked %i out of %i."
+msgstr "Sinä olet rankingissa (%s) %i %i:stä."
+
+#: plugin.py:346
+msgid "Highest karma: %L.  Lowest karma: %L.%s"
+msgstr "Korkein karma: %L.  Alhaisin karma: %L.%s"
+
+#: plugin.py:354
+msgid ""
+"[<channel>] {increased,decreased,active}\n"
+"\n"
+"        Returns the most increased, the most decreased, or the most active\n"
+"        (the sum of increased and decreased) karma things.  <channel> is "
+"only\n"
+"        necessary if the message isn't sent in the channel itself.\n"
+"        "
+msgstr ""
+"[<kanava>] {increased,decreased,active}\n"
+"\n"
+"        Palauttaa eniten nousseen (\"increased\"), eniten laskeneen "
+"(\"decreased\"), tai aktiivisimman (\"active\")\n"
+"        (nousseiden ja laskeneiden) karma asiat.  <Kanava> on vaadittu vain, "
+"jos\n"
+"        viestiä ei lähetetä kanavalla itsellään.\n"
+"        "
+
+#: plugin.py:372
+msgid ""
+"[<channel>] [<name>]\n"
+"\n"
+"        Resets the karma of <name> to 0. If <name> is not given, resets\n"
+"        everything.\n"
+"        "
+msgstr ""
+"[<kanava>] <nimi>\n"
+"\n"
+" Asettaa <nimen> karman arvoksi 0. Jos <nimeä> ei ole annettu, asettaa "
+"kaiken\n"
+" arvoksi 0."
+
+#: plugin.py:383
+msgid ""
+"[<channel>] <filename>\n"
+"\n"
+"        Dumps the Karma database for <channel> to <filename> in the bot's\n"
+"        data directory.  <channel> is only necessary if the message isn't "
+"sent\n"
+"        in the channel itself.\n"
+"        "
+msgstr ""
+"[<kanava>] <tiedostonimi>\n"
+"\n"
+"        Tallentaa <kanavan> <tiedostonimeen> botin\n"
+"        \"data\" hakemistoon.  <Kanava> on vaadittu vain, jos viestiä ei "
+"lähetetä\n"
+"         kanavalla itsellään.\n"
+"        "
+
+#: plugin.py:395
+msgid ""
+"[<channel>] <filename>\n"
+"\n"
+"        Loads the Karma database for <channel> from <filename> in the bot's\n"
+"        data directory.  <channel> is only necessary if the message isn't "
+"sent\n"
+"        in the channel itself.\n"
+"        "
+msgstr ""
+"[<kanava>] <tiedostonimi>\n"
+"\n"
+"        Lataa Karma tietokannan <kanavalle> <tiedostonimestä> botin\n"
+"        \"data\" hakemistosta.  <Kanava> on vaadittu vain, jos viestiä ei "
+"lähetetä\n"
+"        kanavalla itsellään.\n"
+"        "

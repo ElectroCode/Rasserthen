@@ -1,0 +1,1 @@
+This plugin allows you to see the plugins, which plugin a command belongs to, you can find out who the author of the command is and who contributed to it.

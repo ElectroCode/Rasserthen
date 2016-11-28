@@ -1,0 +1,1 @@
+This plugin allows you to add your own success messages to replace the default 'The operation succeeded.' message.
