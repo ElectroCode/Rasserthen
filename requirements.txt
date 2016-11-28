@@ -1,0 +1,9 @@
+chardet
+pytz
+python-dateutil
+python-gnupg
+feedparser
+sqlalchemy
+SocksiPy-branch
+mock
+ecdsa

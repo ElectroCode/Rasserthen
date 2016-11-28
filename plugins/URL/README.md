@@ -1,0 +1,1 @@
+This plugin records how many URLs have been mentioned in the channel and what the last URL was.
